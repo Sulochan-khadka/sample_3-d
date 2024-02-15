@@ -8,11 +8,7 @@ function App() {
   const cameraRef = useRef();
   return (
     <Canvas>
-      <PerspectiveCamera
-        makeDefault
-        ref={cameraRef}
-        position={[0, 5, 20]} // Adjust the z-coordinate to move the camera closer or farther from the scene
-      />
+      <PerspectiveCamera makeDefault ref={cameraRef} position={[0, 5, 20]} />
       <ambientLight />
       <directionalLight position={[0, 0, 5]} intensity={2} />
       <OrbitControls />
